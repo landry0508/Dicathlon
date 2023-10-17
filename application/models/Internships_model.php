@@ -4,8 +4,8 @@
         parent::__construct();
         $this->load->database();
         }
-        public function get_utilisateur(){
-            $query=$this->db->get('	utilisateur');
+        public function get_produit(){
+            $query=$this->db->get('	produit');
             return $query->result_array();
             }
             

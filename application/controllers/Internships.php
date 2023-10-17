@@ -5,6 +5,6 @@ parent::__construct();
 $this->load->model('internships_model');
 }
 public function index(){
-$data['utilisateur_list']=$this->internships_model->get_utilisateur();
+$data['produit_list']=$this->internships_model->get_produit();
 }
 }
