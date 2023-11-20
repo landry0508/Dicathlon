@@ -11,19 +11,22 @@ header{
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px  ;
+    text-align: left;
 }
 
-.title{
-    padding-top: 20px;
+.TitleName{
+    left: 100%;
 }
-.recherche{
-    width: 800px;
-    height: 50px;
-    background-color: #FFFBF5;
-}
+
+
 .icones{
     display: flex;
     flex-direction: row;
     gap: 50px;
     justify-content:end; 
+}
+
+#searchbar{
+    width: 800px;
+
 }
