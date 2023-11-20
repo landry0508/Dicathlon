@@ -7,26 +7,41 @@ header{
     display: flex;
     flex-direction: row;
     background-color: violet;
-    gap: 50px;
+    gap: 75px;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px  ;
-    text-align: left;
 }
 
-.TitleName{
-    left: 100%;
+#TitleName{
+    text-align: left;
 }
 
 
 .icones{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 70px;
     justify-content:end; 
 }
 
 #searchbar{
     width: 800px;
 
+}
+
+
+                                                        /*Footer*/
+                                                    
+.FooterLeft{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FootContainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 10%;
 }
