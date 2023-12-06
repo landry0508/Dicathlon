@@ -7,31 +7,27 @@
 
 header{
     display: grid;
-    grid-template-columns: repeat(9, auto);
-    grid-template-rows: 1fr;
-    flex-direction: row;
-    background-color: violet;
-    gap: 75px;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px  ;
+    grid-template-columns: repeat(6, auto);
+    background-color: rgb(192, 124, 255);
+    
 }
 
-#TitleName{
-    grid-column: 2/3;
+.TitleName{
+    grid-column: 2;
 }
 
 
 .icones{
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-    justify-content:end; 
-    margin-top: 300px;
+display: flex;
+flex-direction: row;
+gap: 50px;
+grid-column: 6 ;
+margin-top: auto;
 }
 
 #searchbar{
     height: 50px;
+    grid-column: 3/5;
 }
 
 

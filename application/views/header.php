@@ -16,13 +16,20 @@
 
     <div class='icones'>
         <div class='connexion_icone'>
-            <img id='img_connexion' src="" alt="">
+            <img id='img_connexion' src="http://localhost/Dicathlon/IMG/connexion(1).png" alt="">
             <p class='img_texte_connexion'>Connexion</p>
         </div>
         <div class='shop_icone'>
             <img id='img_shop' src="" alt="">
             <p class='img_texte_shop'>Panier</p>
         </div>
+
+        <div id='BlackLine'></div>
+
+        <div id>
+
+        </div>
+
     </div>
 </header>
 <body>
