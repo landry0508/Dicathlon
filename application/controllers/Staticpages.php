@@ -18,7 +18,7 @@
     // Load a generic page
     $this->load->view('template');
     }
-    public function index (){
+    function index (){
         $this ->display('home');
     }
 ?>

@@ -8,3 +8,4 @@ public function index(){
 $data['produit_list']=$this->internships_model->get_produit();
 }
 }
+?>
