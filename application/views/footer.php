@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="http://localhost/Dicathlon/CSS/style.css">
     </head>
     <body>
-        
+
     </body>
 
     <footer>
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <div>
+        <div class='droit'>
             © 202 Dicathlon - Tous droits réservés
         </div>
     </footer>

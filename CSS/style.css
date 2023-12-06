@@ -49,3 +49,16 @@ header{
     justify-content: center;
     gap: 10%;
 }
+
+.FooterLeft p{
+  padding-top: 10px;
+}
+
+
+
+.droit{
+	display: flex;
+    justify-content: center;
+      padding-top: 10px;
+
+}
