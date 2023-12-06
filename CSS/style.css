@@ -31,7 +31,31 @@ margin-top: auto;
 }
 
 
-                                                        /*Footer*/
+/*------------------------------------------Body-------------------------------*/
+
+h1{
+	display: flex;
+	justify-content: center;
+}
+
+.offres{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tennis{
+	grid-columns:1;
+	width:50px;
+}
+
+.wilson{
+	grid-columns:2;
+}
+
+.wilson1{
+	grid-columns:3;
+}
+/*------------------------------------------Footer-------------------------------*/
                                                     
 .FooterLeft{
     flex-direction: column;
