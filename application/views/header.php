@@ -16,22 +16,28 @@
 
     <div class='icones'>
         <div class='connexion_icone'>
-            <img id='img_connexion' src="http://localhost/Dicathlon/IMG/connexion(1).png" alt="">
-            <p class='img_texte_connexion'>Connexion</p>
+            <img id='img_connexion' src="../IMG/connexion (1).png" alt="">
+            <p class='img_texte_connexion'> Connexion</p>
         </div>
         <div class='shop_icone'>
-            <img id='img_shop' src="" alt="">
-            <p class='img_texte_shop'>Panier</p>
-        </div>
-
-        <div id='BlackLine'></div>
-
-        <div id>
-
+            <img id='img_connexion' src="../IMG/panier (1).png" alt="">
+            <p class='img_texte_connexion'>Panier</p>
         </div>
 
     </div>
 </header>
+
+<div id='TypeOfSport'>
+            <div id='Mutlisport'>Équipement Mutlisport</div>
+            <div id='Collectifs'>Sport Collectifs</div>
+            <div id='Raquette'>Sport de Raquettes</div>
+            <div id='Muscu'>Musculation et Fitness</div>
+            <div id='Autres'>Autres</div>
+            <div id='BonPlan'>Bon Plan</div>
+        </div>
+    
+        <div id='BlackLine'></div>
+
 <body>
     
 </body>
