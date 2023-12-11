@@ -1,6 +1,19 @@
 
     <h1>Liste des Produits</h1>
-    <table border="1">
+    <div id='AllProduct'>
+        <div id='NameProduct'>
+            <?php foreach ($page as $product) : ?>
+                <a href="<?php= site_url('produit/' . $product['type'])?>">
+                    <?= $product['type'] ?>
+                 </a> 
+            </h2>
+            <p id='ProductPrice'>
+                <?= $product['prix_location'] ?></p>
+                <?php endforeach; ?>
+            
+        </div>
+    </div>
+   <!--  <table border="1">
         <tr>
             <th>Type</th>
             <th>Marque</th>
@@ -15,7 +28,7 @@
                 <td><?= $product['etat'] ?></td>
             </tr>
         <?php endforeach; ?>
-    </table>
+    </table> -->
 
 
 

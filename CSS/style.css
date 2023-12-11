@@ -119,16 +119,19 @@ h1{
 
 
 /*Catalogue */
-tr{
-    background-color:#F0F0F0 ;
-    border: solid black;
-
-}
-td{
-    margin-bottom: 100px;
-}
-
-table{
+#AllProduct{
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
 }
+#NameProduct{
+   border: solid black 1px; 
+    margin: 50px;
+}
+#NameProduct a {
+    text-decoration: none;
+    color: black;
+}
+
+
