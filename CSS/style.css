@@ -63,31 +63,235 @@ margin-top: 10px;
 
 /*------------------------------------------Body-------------------------------*/
 h1{
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin: 50px;
+    color:rgb(89, 146, 127);
+    font-size: 35px;
 }
 
 .offres{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
+    
 }
 
-#Tennis{
-	grid-columns: 2/3 ;
-    grid-row: 1;
-    scale: 0.1;
+#muscu{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 379px;
+    height: 350px;
+    border-radius: 2%;
 }
 
-#WilsonNum1{
-	grid-columns: 3/4 ;
-    grid-row: 1;
-    scale: 0.1;
+#raquette{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 379px;
+    height: 350px;
+    padding-left: 75px;
+    padding-right: 75px;
+    border-radius: 2%;
 }
 
-#WilsonNum2{
-	grid-columns: 4/5 ;
-    grid-row: 1;
-    scale: 0.1;
+#velo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 379px;
+    height: 350px;
+    border-radius: 2%;
+
+}
+
+.promo{
+    display: flex;
+    position: absolute;
+}
+
+.promo p{
+    background-color: rgb(166, 149, 182);
+    font-size: 40px;
+    font-style: bold;
+    border-radius: 5%;
+    margin-top: 15px;
+}
+
+.promo1{
+    margin-left: -285px;
+
+}
+
+.promo2{
+    margin-left: 320px;
+}
+
+.promo3{
+    margin-left: 320px;
+}
+
+
+.prix{
+    display: flex;
+    position: absolute;
+}
+.prix p{
+    background-color: rgb(149, 182, 160);
+    font-size: 40px;
+    font-style: bold;
+    border-radius: 5%;
+    margin-top: 280px;
+}
+
+.prix1{
+    margin-left: -350px;
+
+}
+
+.prix2{
+    margin-left: 400px;
+}
+
+.prix3{
+    margin-left: 380px;
+}
+
+
+
+.description1{
+    display: flex;
+    position: absolute;
+    margin-left: -850px;
+    background-color: rgb(195, 184, 206);
+    font-size: 25px;
+    font-style: bold;
+    border-radius: 3%;
+    margin-top: 320px;
+
+}
+
+.description2{
+    display: flex;
+    position: absolute;
+    margin-left: 60px;
+    background-color: rgb(195, 184, 206);
+    font-size: 25px;
+    font-style: bold;
+    border-radius: 3%;
+    margin-top: 320px;
+}
+
+.description3{
+    display: flex;
+    position: absolute;
+    margin-left: 1000px;
+    background-color: rgb(195, 184, 206);
+    font-size: 25px;
+    font-style: bold;
+    border-radius: 3%;
+    margin-top: 320px;
+}
+
+.barre{
+    width: 90%;
+    margin:0 auto;
+    background-color: blueviolet;
+    height: 5px;
+    z-index: 1;
+    margin-top: 90px;
+    border-radius: 20%;
+
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 50px;
+    color:rgb(89, 146, 127);
+    font-size: 35px;
+}
+
+
+.escalade{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 0.8;
+    margin-top: -50px;
+
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: -50px;
+    color:rgb(89, 146, 127);
+    font-size: 35px;
+}
+
+.best{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 60px;
+    
+}
+
+#nakamura{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 379px;
+    height: 350px;
+    border-radius: 2%;
+}
+#snow{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 379px;
+    height: 350px;
+    border-radius: 2%;
+}
+#ski{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 379px;
+    height: 350px;
+    border-radius: 2%;
+}
+#panier{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 379px;
+    height: 350px;
+    border-radius: 2%;
+}
+
+.best p{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 2%;
+    background-color: rgb(140, 140, 182);
+}
+
+.best article{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 2%;
+    background-color: rgb(159, 182, 140);
+
 }
 /*------------------------------------------Footer-------------------------------*/
                                                     

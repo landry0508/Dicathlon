@@ -5,7 +5,7 @@
             <?php foreach ($page as $product) : ?>
                 <a href="<?php= site_url('produit/' . $product['type'])?>">
                     <?= $product['type'] ?>
-                 </a> 
+             </a> 
             </h2>
             <p id='ProductPrice'>
                 <?= $product['prix_location'] ?></p>
