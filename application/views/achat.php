@@ -37,7 +37,94 @@
         <div id='BlackLine'></div>
 
 <body>
-    
+    <h2>Mon panier</h2>
+    <div>
+        <img src="../IMG/placeholder.png" alt="">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+        #array_location {
+            margin: 20px;
+        }
+
+        #reservation {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="array_location">
+        <h2 id="reservation">Formulaire de réservation</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dateDebut">Date de début :</label>
+            <input type="date" id="dateDebut" name="dateDebut" required>
+
+            <label for="dateFin">Date de fin :</label>
+            <input type="date" id="dateFin" name="dateFin" required>
+
+            <label for="typeLogement">Type de produit :</label>
+            <select id="typeLogement" name="typeLogement" required>
+            <?php
+                // Afficher les options du menu déroulant
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<option value='" . $row["id"] . "'>" . $row["nom_produit"] . "</option>";
+                    }
+                } else {
+                    echo "<option value=''>Aucun produit disponible</option>";
+                }
+                ?>
+
+            <form action="#" method="post">
+            <!-- Vos champs de formulaire ici -->
+
+            <button type="submit" class="louer-btn">Louer</button>
+        </form>
+
+
 
 
 

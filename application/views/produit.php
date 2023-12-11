@@ -38,7 +38,22 @@
 
 <body>
 
+<img src="IMG/placeholder.png" alt="">
 
+<section id="array_location">
+        <h2 id="reservation">Formulaire de réservation</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dateDebut">Date de début :</label>
+            <input type="date" id="dateDebut" name="dateDebut" required>
+
+            <label for="dateFin">Date de fin :</label>
+            <input type="date" id="dateFin" name="dateFin" required>
 
 </body>
 <footer>
