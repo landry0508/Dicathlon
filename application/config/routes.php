@@ -52,3 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'staticpages';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['catalogue'] = "welcome/catalogue";
+$route['produit'] = "welcome/produit";
+$route['achat'] = "welcome/achat";

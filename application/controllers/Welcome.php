@@ -25,4 +25,25 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 
 	}
+
+	public function catalogue (){
+		$page_data['page_title'] = "Catalogue";
+		$page_data['page'] = 'catalogue';
+		$this->load->view('catalogue', $page_data);
+	}
+
+	public function produit (){
+		$page_data['page_title'] = "Produit";
+		$page_data['page'] = 'produit';
+		$this->load->view('produit', $page_data);
+	}
+
+	public function achat (){
+		$page_data['page_title'] = "Achat";
+		$page_data['page'] = 'achat';
+		$this->load->view('achat', $page_data);
+	}
+
+
+
 }

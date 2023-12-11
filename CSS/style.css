@@ -62,7 +62,6 @@ margin-top: 10px;
 
 
 /*------------------------------------------Body-------------------------------*/
-
 h1{
 	display: flex;
 	justify-content: center;
@@ -70,20 +69,25 @@ h1{
 
 .offres{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
 }
 
-.tennis{
-	grid-columns:1;
-	width:50px;
+#Tennis{
+	grid-columns: 2/3 ;
+    grid-row: 1;
+    scale: 0.1;
 }
 
-.wilson{
-	grid-columns:2;
+#WilsonNum1{
+	grid-columns: 3/4 ;
+    grid-row: 1;
+    scale: 0.1;
 }
 
-.wilson1{
-	grid-columns:3;
+#WilsonNum2{
+	grid-columns: 4/5 ;
+    grid-row: 1;
+    scale: 0.1;
 }
 /*------------------------------------------Footer-------------------------------*/
                                                     
