@@ -120,11 +120,15 @@ h1{
 
 /*Catalogue */
 tr{
+    background-color:#F0F0F0 ;
+    border: solid black;
+
+}
+td{
+    margin-bottom: 100px;
+}
+
+table{
     display: flex;
     justify-content: center;
 }
-td{
-    background-color:#F0F0F0 ;
-    border: solid black;
-}
-
