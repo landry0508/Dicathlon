@@ -118,5 +118,13 @@ h1{
 }
 
 
-/*Page de location */
+/*Catalogue */
+tr{
+    display: flex;
+    justify-content: center;
+}
+td{
+    background-color:#F0F0F0 ;
+    border: solid black;
+}
 

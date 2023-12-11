@@ -38,7 +38,7 @@
 
 <body>
 
-<img src="IMG/placeholder.png" alt="">
+<img src="../IMG/placeholder.png" alt="">
 
 <section id="array_location">
         <h2 id="reservation">Formulaire de réservation</h2>

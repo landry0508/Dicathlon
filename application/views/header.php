@@ -25,8 +25,11 @@
         </div>
 
     </div>
+
 </header>
 
+
+<body>
 <div id='TypeOfSport'>
             <div id='Mutlisport'>Équipement Mutlisport</div>
             <div id='Collectifs'>Sport Collectifs</div>
@@ -37,8 +40,3 @@
         </div>
     
         <div id='BlackLine'></div>
-
-<body>
-</body>
-</html>
-</html>

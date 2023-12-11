@@ -1,12 +1,4 @@
-<html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="http://localhost/Dicathlon/CSS/style.css">
-    </head>
-    <body>
+
 
     </body>
 
@@ -48,7 +40,7 @@
         </div>
 
         <div class='droit'>
-            © 202 Dicathlon - Tous droits réservés
+            © 2023 Dicathlon - Tous droits réservés
         </div>
     </footer>
     </html>
