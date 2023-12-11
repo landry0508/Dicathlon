@@ -13,9 +13,9 @@
 
     <div class='offres'>
 
-        <img id='muscu' src="img/haltere.jpg"/>
-        <img id='raquette'src="img/raquette.jpg" />
-        <img id='velo' src="img/velo.jpg" /> 
+        <img id='muscu' src="../IMG/haltere.jpg"/>
+        <img id='raquette'src="../IMG/raquette.jpg" />
+        <img id='velo' src="../IMG/velo.jpg" /> 
 
     <div class="promo">
 
@@ -62,7 +62,7 @@
 
     <div class='escalade'>
         
-        <img id='escaladeimg' src="img/escalade.PNG"/>
+        <img id='escaladeimg' src="../IMG/escalade.PNG"/>
 
     </div>
 
@@ -71,25 +71,25 @@
     <div class='best'>
 
         <div class="titre1">
-        <img id='nakamura' src="img/nakamura.png"/>
+        <img id='nakamura' src="../IMG/nakamura.png"/>
         <p>NAKAMURA 35€</p>
         <article>RÉSERVER</article>
         </div>
 
         <div class="titre2">
-        <img id='snow'src="img/snow.png" />
+        <img id='snow'src="../IMG/snow.png" />
         <p>SALOMON 35€</p>
         <article>RÉSERVER</article>
         </div>
 
         <div class="titre3">
-        <img id='ski' src="img/ski.PNG" />
+        <img id='ski' src="../IMG/ski.PNG" />
         <p>ROSSIGNOL 35€</p>
         <article>RÉSERVER</article>
         </div>
 
         <div class="titre4">
-        <img id='panier' src="img/panier.png" />
+        <img id='panier' src="../IMG/panier.png" />
         <p>PRO TOUCH 35€</p>
         <article>RÉSERVER</article> 
         </div>
