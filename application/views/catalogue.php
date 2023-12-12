@@ -1,17 +1,19 @@
 
     <h1>Liste des Produits</h1>
     <div id='AllProduct'>
-        <div id='NameProduct'>
+        
             <?php foreach ($page as $product) : ?>
+                <div id='NameProduct'>
                 <a href="<?php= site_url('produit/' . $product['type'])?>">
                     <?= $product['type'] ?>
              </a> 
             </h2>
             <p id='ProductPrice'>
                 <?= $product['prix_location'] ?></p>
+                </div>
                 <?php endforeach; ?>
             
-        </div>
+        
     </div>
    <!--  <table border="1">
         <tr>
