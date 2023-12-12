@@ -33,3 +33,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 # On ignore la config de bdd
 application/config/database.php
+application/config/config.php
