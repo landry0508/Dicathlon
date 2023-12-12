@@ -241,8 +241,9 @@ h3{
     justify-content: center;
     gap: 70px;
     margin-top: 60px;
-    
+    scale: 0.7;
 }
+
 
 #nakamura{
     width: 100%;

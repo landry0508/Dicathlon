@@ -35,7 +35,7 @@
             <div id='Collectifs'>Sport Collectifs</div>
             <div id='Raquette'>Sport de Raquettes</div>
             <div id='Muscu'>Musculation et Fitness</div>
-            <div id='Autres'>Autres</div>
+            <div id='Autres'>Tout notre catalogue</div>
             <div id='BonPlan'>Bon Plan</div>
         </div>
     
