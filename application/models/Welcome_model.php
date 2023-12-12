@@ -6,10 +6,7 @@ class Welcome_model extends CI_Model {
 
 
     public function getProducts() {
-        $this->db->select('*');
-        $this->db->from('produit');
-        $query = $this->db->get();
-
+        $this->db->get('produit');
         return $query->result_array();
     }
 }
