@@ -6,6 +6,7 @@
                 <div id='NameProduct'>
                 <a href="<?php= site_url('produit/' . $product['type'])?>">
                     <?= $product['type'] ?>
+                    <img src="IMG/haltere.jpg" alt="">
              </a> 
             </h2>
             <p id='ProductPrice'>

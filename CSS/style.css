@@ -329,17 +329,20 @@ h3{
 
 
 /*-------------------------------Catalogue -----------------------------*/
-#AllProduct{
+#AllProduct {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 50px;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    justify-content: space-between; /* Espacement équitable entre les éléments */
+    gap: 20px; /* Espacement entre les colonnes */
 }
-#NameProduct{
-   border: solid black 1px; 
-    margin: 50px;
+
+#NameProduct {
+    border: solid black 1px;
+    width: calc(33.33% - 20px); /* Largeur pour trois colonnes avec espacement */
+    box-sizing: border-box; /* Inclus la bordure dans la largeur spécifiée */
+    margin-bottom: 20px; /* Espacement vertical entre les produits */
 }
+
 #NameProduct a {
     text-decoration: none;
     color: black;
