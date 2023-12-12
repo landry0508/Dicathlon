@@ -9,12 +9,12 @@
     </head>
     
     <body>
-    <h1>OFFRES DU MOMENTS </h1>
+    <h1 class='moments'>OFFRES DU MOMENTS </h1>
 
     <div class='offres'>
 
-        <img id='muscu' src="../IMG/haltere.jpg"/>
-        <img id='raquette'src="../IMG/raquette.jpg" />
+        <img id='haltere' src="../IMG/haltere.jpg"/>
+        <img id='Sport_raquette'src="../IMG/raquette.jpg" />
         <img id='velo' src="../IMG/velo.jpg" /> 
 
     <div class="promo">
