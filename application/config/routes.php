@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['catalogue'] = "welcome/catalogue";
 $route['produit'] = "welcome/produit";
 $route['achat'] = "welcome/achat";
+$route['default_controller'] = 'connexion';
