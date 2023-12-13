@@ -25,8 +25,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-
-		$this->load->view('header');
 		$this->load->view('accueil');
 		$this->load->view('footer');
 
@@ -39,7 +37,7 @@ class Welcome extends CI_Controller {
 
 		$page_data['page'] = $page_data['catalogue'];
 
-		$this->load->view('header');
+
 		$this->load->view('catalogue', $page_data);
 		// $this->load->view('catalogue');
 		$this->load->view('footer');
@@ -57,6 +55,19 @@ class Welcome extends CI_Controller {
 		$this->load->view('achat', $page_data);
 	}
 
-	
+	public function descriptionProduit($slug = FALSE){
+		$data['title'] = "Description du Produit";
+		$data['descriptionProduit'] = $this->Welcome_model->getDescription($slug);
+		if(empty($data['descriptionProduit'])) {
+			show_404();
+	}
 
+	$data['categorie'] = $this->Welcome_model->getCatégorie();
+
+	$this->load->helper('url');
+	$this->load->view("templates/header", $data);
+	$this->load->view("accueil/descriptionProduit", $data);
+	$this->load->view("templates/footer");
+
+	}
 }

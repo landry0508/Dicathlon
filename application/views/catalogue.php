@@ -1,3 +1,29 @@
+<head>
+<link rel="stylesheet" href="http://localhost/Dicathlon/CSS/style.css">
+</head>
+<header>
+
+<a href="http://localhost/Dicathlon/index.php/Welcome/"><h1 class='TitleName'>Dicathlon</h1></a>
+
+<input id="searchbar" onkeyup="search_animal()" type="text"
+name="search" placeholder="Rechercher...">
+
+<div class='icones'>
+    <div class='connexion_icone'>
+    <a href="http://localhost/Dicathlon/index.php/connexion">
+    <img id='img_connexion' src="<?= base_url('IMG/connexion (1).png') ?>" alt="">
+
+        <p class='img_texte_connexion'> Connexion</p>
+    </a>
+    </div>
+    <div class='shop_icone'>
+        <img id='img_connexion' src="<?= base_url('IMG/panier (1).png') ?>" alt="">
+        <p class='img_texte_connexion'>Panier</p>
+    </div>
+
+</div>
+
+</header>
 
     <h1>Liste des Produits</h1>
     <div id='AllProduct'>

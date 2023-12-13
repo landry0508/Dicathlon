@@ -1,12 +1,10 @@
 <?php
-class Product_model extends CI_Model {
+public function getDescription($slug = FALSE){
+		$this->db->select('*');
+		$this->db->from('produit');
+		$this->db->where('id' , $slug);
+		$query = $this->db->get();
 
-    public function __construct(){
-        $this->load->database();
-    }
-
-    public function get_products() {
-        $query = $this->db->get('dicathlon');
-        return $query->result();
-    }
-}
+		return $query->result_array();
+	}
+?>

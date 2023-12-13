@@ -14,11 +14,11 @@
 
     <div class='icones'>
         <div class='connexion_icone'>
-            <img id='img_connexion' src="../IMG/connexion (1).png" alt="">
+            <img id='img_connexion' src="<?= base_url('IMG/connexion (1).png') ?>" alt="">
             <p class='img_texte_connexion'> Connexion</p>
         </div>
         <div class='shop_icone'>
-            <img id='img_connexion' src="../IMG/panier (1).png" alt="">
+        <img id='img_connexion' src="<?= base_url('IMG/panier (1).png') ?>" alt="">
             <p class='img_texte_connexion'>Panier</p>
         </div>
 
@@ -38,7 +38,17 @@
 
 <body>
 
-<img src="../IMG/placeholder.png" alt="">
+<div id='ListeProduits'>
+    <?php
+        foreach($content as $value):
+    ?>
+    <div>
+        
+    </div>
+</div>
+
+
+<img src="<?= base_url('IMG/IMG/placeholder.png') ?>" alt="">
 
 <section id="array_location">
         <h2 id="reservation">Formulaire de réservation</h2>

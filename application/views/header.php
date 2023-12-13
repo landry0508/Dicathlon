@@ -9,7 +9,7 @@
 </head>
 <header>
 
-    <h1 class='TitleName'>Dicathlon</h1>
+   <a href="http://localhost/Dicathlon/index.php/connexion/authentifier"><h1 class='TitleName'>Dicathlon</h1></a> 
    
     <input id="searchbar" onkeyup="search_animal()" type="text"
     name="search" placeholder="Rechercher...">
