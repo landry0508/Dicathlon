@@ -23,7 +23,21 @@ name="search" placeholder="Rechercher...">
 
 </div>
 
+
+
 </header>
+
+<div id='TypeOfSport'>
+            <a href="http://localhost/Dicathlon/index.php/Welcome/catalogue"><div id='Autres'>Tout notre catalogue</div></a>
+            <div id='Mutlisport'>Équipement Mutlisport</div>
+            <div id='Collectifs'>Sport Collectifs</div>
+            <div id='Raquette'>Sport de Raquettes</div>
+            <div id='Muscu'>Musculation et Fitness</div>
+            <div id='BonPlan'>Bon Plan</div>
+        </div>
+    
+        <div id='BlackLine'></div>
+
 
     <h1>Liste des Produits</h1>
     <div id='AllProduct'>
@@ -32,11 +46,11 @@ name="search" placeholder="Rechercher...">
                 <div id='NameProduct'>
                 <a href="<?php= site_url('produit/' . $product['type'])?>">
                     <?= $product['type'] ?>
-                    <img src="../IMG/<?php ?>" alt="">
+                    <img src="<?= base_url('IMG/PhotoProduit/'. $product['id']) ?>" alt="">
              </a> 
             </h2>
             <p id='ProductPrice'>
-                <?= $product['prix_location'] ?></p>
+                <?= $product['prix_location'] ?> €/jour</p>
                 </div>
                 <?php endforeach; ?>
             

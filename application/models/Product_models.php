@@ -1,10 +1,8 @@
 <?php
-public function getDescription($slug = FALSE){
-		$this->db->select('*');
-		$this->db->from('produit');
-		$this->db->where('id' , $slug);
-		$query = $this->db->get();
+class Product_model extends CI_Model {
 
-		return $query->result_array();
-	}
-?>
+    public function get_all_products() {
+        $query = $this->db->get('produit');
+        return $query->result_array();
+    }
+}

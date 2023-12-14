@@ -56,3 +56,5 @@ $route['catalogue'] = "welcome/catalogue";
 $route['produit'] = "welcome/produit";
 $route['achat'] = "welcome/achat";
 $route['default_controller'] = 'connexion';
+$route['catalogue'] = 'produit';
+

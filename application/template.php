@@ -8,13 +8,13 @@
         <div id="global">
             <div id="entete">
                  <h1> Dicathlon </h1>
-            </div><!-- # entete -->
+            </div>
             <div id="contenu">
                 <?php $this->load->view($content);?>
-            </div><!-- # contenu -->
+            </div>
             <div id="pied">
                 <strong>&copy;2023</strong>
-            </div><!--#pied-->
-        </div><!--#global-->
+            </div>
+        </div>
     </body>
 </html>

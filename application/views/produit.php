@@ -38,14 +38,6 @@
 
 <body>
 
-<div id='ListeProduits'>
-    <?php
-        foreach($content as $value):
-    ?>
-    <div>
-        
-    </div>
-</div>
 
 
 <img src="<?= base_url('IMG/IMG/placeholder.png') ?>" alt="">
@@ -64,6 +56,42 @@
 
             <label for="dateFin">Date de fin :</label>
             <input type="date" id="dateFin" name="dateFin" required>
+
+
+
+
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+
+</head>
+<body>
+    <header>
+    </header>
+
+    <h1>Liste des Produits</h1>
+    <div id='AllProduct'>
+        <?php foreach ($page as $product) : ?>
+            <div id='NameProduct'>
+                <a href="<?= site_url('produit/' . $product['type']) ?>">
+                    <p><?= $product['type'] ?></p>
+                    <img src="<?= base_url('IMG/PhotoProduit/'. $product['id']) ?>" alt="">
+                </a>
+                <p id='ProductPrice'>
+                    <?= $product['prix_location'] ?>
+                </p>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+
+</body>
+</html>
+
 
 </body>
 <footer>

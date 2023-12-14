@@ -108,7 +108,6 @@
             <label for="typeLogement">Type de produit :</label>
             <select id="typeLogement" name="typeLogement" required>
             <?php
-                // Afficher les options du menu déroulant
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
                         echo "<option value='" . $row["id"] . "'>" . $row["nom_produit"] . "</option>";
@@ -119,7 +118,6 @@
                 ?>
 
             <form action="#" method="post">
-            <!-- Vos champs de formulaire ici -->
 
             <button type="submit" class="louer-btn">Louer</button>
         </form>
