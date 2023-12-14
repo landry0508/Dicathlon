@@ -75,17 +75,29 @@
 
     <h1>Liste des Produits</h1>
     <div id='AllProduct'>
-        <?php foreach ($page as $product) : ?>
-            <div id='NameProduct'>
-                <a href="<?= site_url('produit/' . $product['type']) ?>">
-                    <p><?= $product['type'] ?></p>
-                    <img src="<?= base_url('IMG/PhotoProduit/'. $product['id']) ?>" alt="">
-                </a>
-                <p id='ProductPrice'>
-                    <?= $product['prix_location'] ?>
-                </p>
-            </div>
-        <?php endforeach; ?>
+        <?php foreach ($page as $product){
+
+            $id=$produit["id"];
+
+        ?>
+
+            <?php echo("<a href='".site_url("Welcome/catalogue/$id")."'>");?>
+
+                <div id='NameProduct'>
+                    <?php= site_url('produit/' . $product['type']) ?>">
+                        <p><?= $product['type'] ?></p>
+                        <img src="<?= base_url('IMG/PhotoProduit/'. $product['id']) ?>" alt="">
+                    
+                    <p id='ProductPrice'>
+                        <?= $product['prix_location'] ?>
+                    </p>
+                </div>
+
+            </a>
+        <?php  
+        
+         }
+        ?>
     </div>
 
 
