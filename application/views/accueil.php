@@ -23,8 +23,9 @@ name="search" placeholder="Rechercher...">
     </a>
     </div>
     <div class='shop_icone'>
+    <a href="http://localhost/Dicathlon/index.php/achat">
     <img id='img_connexion' src="<?= base_url('IMG/panier (1).png') ?>" alt="">
-        <p class='img_texte_connexion'>Panier</p>
+    <p class='img_texte_connexion'>Panier</p></a>
     </div>
 
 </div>

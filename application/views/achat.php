@@ -5,42 +5,7 @@
     <title>Achat</title>
     <link rel="stylesheet" href="http://localhost/Dicathlon/CSS/style.css">
 </head>
-<header>
-
-    <h1 class='TitleName'>Dicathlon</h1>
-   
-    <input id="searchbar" onkeyup="search_animal()" type="text"
-    name="search" placeholder="Rechercher...">
-
-    <div class='icones'>
-        <div class='connexion_icone'>
-            <img id='img_connexion' src="../IMG/connexion (1).png" alt="">
-            <p class='img_texte_connexion'> Connexion</p>
-        </div>
-        <div class='shop_icone'>
-            <img id='img_connexion' src="../IMG/panier (1).png" alt="">
-            <p class='img_texte_connexion'>Panier</p>
-        </div>
-
-    </div>
-</header>
-
-<div id='TypeOfSport'>
-            <div id='Mutlisport'>Équipement Mutlisport</div>
-            <div id='Collectifs'>Sport Collectifs</div>
-            <div id='Raquette'>Sport de Raquettes</div>
-            <div id='Muscu'>Musculation et Fitness</div>
-            <div id='Autres'>Autres</div>
-            <div id='BonPlan'>Bon Plan</div>
-        </div>
-    
-        <div id='BlackLine'></div>
-
-<body>
-    <h2>Mon panier</h2>
-    <div>
-        <img src="../IMG/placeholder.png" alt="">
-    <style>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -87,11 +52,48 @@
             cursor: pointer;
         }
     </style>
+<header>
+
+    <a href="http://localhost/Dicathlon/index.php/Welcome/"><h1 class='TitleName'>Dicathlon</h1></a>
+   
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+    name="search" placeholder="Rechercher...">
+
+    <div class='icones'>
+        <div class='connexion_icone'>
+        <a href="http://localhost/Dicathlon/index.php/connexion">
+        <img id='img_connexion' src="<?= base_url('IMG/connexion (1).png') ?>" alt="">
+
+        <p class='img_texte_connexion'> Connexion</p>
+        </a>
+        </div>
+        <div class='shop_icone'>
+            <img id='img_connexion' src="../IMG/panier (1).png" alt="">
+            <p class='img_texte_connexion'>Panier</p>
+        </div>
+
+    </div>
+</header>
+
+<div id='TypeOfSport'>
+            <a href="http://localhost/Dicathlon/index.php/Welcome/catalogue"><div id='Autres'>Tout notre catalogue</div></a>
+            <div id='Mutlisport'>Équipement Mutlisport</div>
+            <div id='Collectifs'>Sport Collectifs</div>
+            <div id='Raquette'>Sport de Raquettes</div>
+            <div id='Muscu'>Musculation et Fitness</div>
+            <div id='Autres'>Autres</div>
+            <div id='BonPlan'>Bon Plan</div>
+        </div>
+    
+        <div id='BlackLine'></div>
+
+<body>
+    <h2>Mon panier</h2>
+    
 </head>
 <body>
 
     <section id="array_location">
-        <h2 id="reservation">Formulaire de réservation</h2>
         <form action="#" method="post">
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom" required>
@@ -105,12 +107,12 @@
             <label for="dateFin">Date de fin :</label>
             <input type="date" id="dateFin" name="dateFin" required>
 
-            <label for="typeLogement">Type de produit :</label>
-            <select id="typeLogement" name="typeLogement" required>
+            <label for="typeProduit">Type de produit :</label>
+            <select id="typeProduit" name="typeProduit" required>
             <?php
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
-                        echo "<option value='" . $row["id"] . "'>" . $row["nom_produit"] . "</option>";
+                        echo "<option value='" . $product["type"] . "'>" . $product["produit"] . "</option>";
                     }
                 } else {
                     echo "<option value=''>Aucun produit disponible</option>";
@@ -124,10 +126,7 @@
 
 
 
-
-
-</body>
-<footer>
+        <footer>
         <div class="FootContainer">
             <div class='FooterLeft'>
                 <h4>Notre entreprise</h4>
@@ -165,7 +164,10 @@
         </div>
 
         <div class='droit'>
-            © 202 Dicathlon - Tous droits réservés
+            © 2023 Dicathlon - Tous droits réservés
         </div>
     </footer>
+
+</body>
+
 </html>

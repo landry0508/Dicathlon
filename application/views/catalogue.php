@@ -17,8 +17,9 @@ name="search" placeholder="Rechercher...">
     </a>
     </div>
     <div class='shop_icone'>
+        <a href="http://localhost/Dicathlon/index.php/achat">
         <img id='img_connexion' src="<?= base_url('IMG/panier (1).png') ?>" alt="">
-        <p class='img_texte_connexion'>Panier</p>
+        <p class='img_texte_connexion'>Panier</p></a>
     </div>
 
 </div>
@@ -48,7 +49,6 @@ name="search" placeholder="Rechercher...">
                     <?= $product['type'] ?>
                     <img src="<?= base_url('IMG/PhotoProduit/'. $product['id']) ?>" alt="">
              </a> 
-            </h2>
             <p id='ProductPrice'>
                 <?= $product['prix_location'] ?> €/jour</p>
                 </div>
@@ -56,6 +56,9 @@ name="search" placeholder="Rechercher...">
             
         
     </div>
+
+
+    
    <!--  <table border="1">
         <tr>
             <th>Type</th>

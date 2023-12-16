@@ -39,7 +39,6 @@ class Welcome extends CI_Controller {
 
 
 		$this->load->view('catalogue', $page_data);
-		// $this->load->view('catalogue');
 		$this->load->view('footer');
 	}
 
@@ -70,4 +69,11 @@ class Welcome extends CI_Controller {
 	$this->load->view("templates/footer");
 
 	}
+
+public function productDetails($productId) {
+    $this->load->model('Product_model');
+    $data['product'] = $this->Product_model->getProductDetails($productId);
+    $this->load->view('product', $data);
+}
+
 }

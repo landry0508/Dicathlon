@@ -38,74 +38,17 @@
 
 <body>
 
-
-
-<img src="<?= base_url('IMG/IMG/placeholder.png') ?>" alt="">
-
-<section id="array_location">
-        <h2 id="reservation">Formulaire de réservation</h2>
-        <form action="#" method="post">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required>
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="dateDebut">Date de début :</label>
-            <input type="date" id="dateDebut" name="dateDebut" required>
-
-            <label for="dateFin">Date de fin :</label>
-            <input type="date" id="dateFin" name="dateFin" required>
-
-
-
-
-
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue</title>
-
-</head>
-<body>
-    <header>
-    </header>
-
-    <h1>Liste des Produits</h1>
-    <div id='AllProduct'>
-        <?php foreach ($page as $product){
-
-            $id=$produit["id"];
-
-        ?>
-
-            <?php echo("<a href='".site_url("Welcome/catalogue/$id")."'>");?>
-
-                <div id='NameProduct'>
-                    <?php= site_url('produit/' . $product['type']) ?>">
-                        <p><?= $product['type'] ?></p>
-                        <img src="<?= base_url('IMG/PhotoProduit/'. $product['id']) ?>" alt="">
-                    
-                    <p id='ProductPrice'>
-                        <?= $product['prix_location'] ?>
-                    </p>
-                </div>
-
-            </a>
-        <?php  
-        
-         }
-        ?>
-    </div>
+<h2>Détail du produit</h2>
+<p>Type: <?= $productId['type'] ?></p>
+<p>Description: <?= $$productId['description'] ?></p>
+<p>Model: <?= $$productId['modele'] ?></p>
+<p>Price: <?= $$productId['prix_location'] ?> €/jour</p>
+<p>Condition: <?= $$productId['etat'] ?></p>
 
 
 </body>
 </html>
 
-
-</body>
 <footer>
         <div class="FootContainer">
             <div class='FooterLeft'>
@@ -144,7 +87,7 @@
         </div>
 
         <div class='droit'>
-            © 202 Dicathlon - Tous droits réservés
+            © 2023 Dicathlon - Tous droits réservés
         </div>
     </footer>
 </html>
