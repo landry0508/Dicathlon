@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 /*------------------------------------------Header-------------------------------*/
 
 header{
@@ -331,16 +337,16 @@ h3{
 /*-------------------------------Catalogue -----------------------------*/
 #AllProduct {
     display: flex;
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
-    justify-content: space-between; /* Espacement équitable entre les éléments */
-    gap: 20px; /* Espacement entre les colonnes */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
 }
 
 #NameProduct {
     border: solid black 1px;
-    width: calc(33.33% - 20px); /* Largeur pour trois colonnes avec espacement */
-    box-sizing: border-box; /* Inclus la bordure dans la largeur spécifiée */
-    margin-bottom: 20px; /* Espacement vertical entre les produits */
+    width: calc(33.33% - 20px); 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
 }
 
 #NameProduct a {
@@ -349,3 +355,82 @@ h3{
 }
 
 
+
+/*-------------------------------------Panier------------------------------*/
+#array_location {
+    margin: 20px;
+}
+
+#reservation {
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*--------------------------------Connexion-------------------------*/
+.container {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #C6B4D1;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: violet;
+}
